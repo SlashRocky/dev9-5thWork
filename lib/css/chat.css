@@ -1,0 +1,211 @@
+body {
+  background: #EEEEEE;
+}
+
+.panel-default {
+  background: #122434;
+  width: 375px;
+  height: 667px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: auto;
+}
+
+.panel-heading {
+  text-align: center;
+  padding: 0 15px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  color: #fff !important;
+  background-color: #0F3B61 !important;
+  border: none !important;
+}
+
+.title_text {
+  padding: 8px 16px;
+}
+
+.panel-footer {
+  background-color: #407086;
+  border-bottom-right-radius: 0px; 
+  border-bottom-left-radius: 0px; 
+}
+
+.image-panel-footer {
+  height: 55px !important;
+}
+
+.title_text {
+  padding: 8px 16px;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: left;
+}
+
+#scroller {
+  height: 456px;
+  overflow: auto;
+}
+
+label {
+  color: white;  
+  background-color: red;
+  padding: 6px;
+  border-radius: 12px;
+}
+
+.file-choice {
+  float: left;
+  width: 70%;
+  height: 36px;
+}
+
+.file-choice-icon {
+  float: left;
+  z-index: 999;
+  width: 70%;
+  top: -38px;
+  pointer-events: none !important;
+}
+
+.mdl-color--amber-400 {
+	background-color: #123C5F !important;
+}
+
+input[type="button"] {
+	color: #fff;
+	background-color: #E46133;
+	height: 34px;
+	padding-top: 4px;
+}
+
+.send2 {
+	float: right;
+	width: 27%;
+	position: relative;
+	top: -36px;
+}
+
+.clearfix:after {
+	content: " ";
+	display: block;
+	clear: both;
+}
+
+/* ------------------------------
+左からの吹き出し = 自分以外
+------------------------------ */
+.sender_name{
+  margin-left: -8px;
+  margin-bottom: -5px;
+  padding-left: 20px;
+  color: #fff;
+}
+.left_balloon {
+  position: relative;
+  color: #2d2d2d;
+  background: #fff;
+  border: 0px solid #777;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: 55%;
+}
+.left_balloon:after {
+  right: 99%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #ffffff;
+  border-width: 6px;
+  margin-top: -6px;
+}
+.yourPhoto {
+  width: 50%;
+  height: auto;
+  margin-left: 11px;
+  margin-bottom: 3px;
+}
+.left_time {
+  margin-left: -8px;
+  margin-top: -5px;
+  padding-left: 20px;
+  color: #865AA7;
+  font-size: 12px;
+}
+
+/* ------------------------------
+右からの吹き出し = 自分
+------------------------------ */
+.sender_name.me{
+	margin-right: 10px;
+  margin-bottom: -5px;
+  padding-left: 20px;
+  color: #fff;
+  float: right;
+  clear: both;
+}
+.right_balloon {
+  position: relative;
+  color: #fff;
+  background: #214660;
+  border: 0px solid #777;
+  margin: 5px 10px;
+  padding: 5px 10px;
+  border-radius: 4px;
+  width: 50%;
+  float: right;
+  clear: both;
+}
+.right_balloon:after {
+  left: 99%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(33, 70, 96, 0);
+  border-left-color: #214660;
+  border-width: 8px;
+  margin-top: -8px;
+}
+.myPhoto {
+  width: 50%;
+  height: auto;
+  margin-right: 11px;
+  margin-bottom: 3px;
+  float: right;
+  clear: both;
+}
+.right_time {
+  margin-right: -10px;
+  margin-top: -5px;
+  padding: 0 20px 0 0;
+  color: #865AA7;
+  font-size: 12px;
+  float: right;
+  clear: both;
+}
+
+/* ------------------------------
+割込解除
+------------------------------ */
+.clear_balloon{
+  clear: both;
+}
+

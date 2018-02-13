@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <!--　BootStrap　-->
+    <!--
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    
+		<!-- Material Design Lite 読込-->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.orange-indigo.min.css">
+		<script defer src="https://code.getmdl.io/1.1.3/material.min.js"></script>
+    
+		<!-- chat.css 読込 -->
+		<link rel="stylesheet" type="text/css" href="lib/css/chat.css">
+    
+    <title>RealTime Chat</title>
+  </head>
+  <body>
+    <!-- コンテンツ表示画面 -->
+    <div class="panel-default">
+     
+      <div class="panel-heading">
+        <p class="title_text">RealTime Chat</p>
+      </div>
+      
+      <!-- 出力エリア -->
+      <div id="scroller" class="panel-body">
+        <ul id='messages'>
+        </ul>
+      </div>
+      
+      <!-- 入力エリア -->
+      <div class="panel-footer">
+        <input type='text' class="form-control" id="nameInput" placeholder="あなたの名前を入力してね">
+      </div>
+      <div class="panel-footer">
+        <input type='text' class="form-control" id="messageInput" placeholder="メッセージを入力してね">
+      </div>
+      <div class="panel-footer image-panel-footer">
+        <form id="image-form" action="#">
+
+          <input id="mediaCapture" type="file" accept="image/*,capture=camera" multiple class="file-choice">
+
+          <button id="submitImage" title="Add an image" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--amber-400 mdl-color-text--white file-choice-icon">
+            <i class="material-icons">image</i>
+          </button>
+
+          <input type="button" id="send2" value="送信" class="send2">
+
+          <div class="clearfix"></div>
+
+        </form>
+      </div>
+    </div> 
+
+    <!-- jQuery読込 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    
+    <!-- Firebase読込 -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    
+    <!-- chat.js読込 -->
+    <script src="lib/js/chat.js"></script>
+    
+  </body>
+</html>
